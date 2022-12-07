@@ -19,7 +19,29 @@
         <span><i class="fas fa-clipboard-list"></i></span> To-Do List
       </h1>
       <div class="input">
-        <input class="Input-bar" type="text" placeholder="Enter your task" />
+        <!-- added form here..for text filling -->
+        <form id="addForm">
+          <div class="row">
+            <div>
+              <input
+                type="text"
+                onkeyup="toggleButton(this, 'submit')"
+                class="form-control"
+                id="item"
+              />
+            </div>
+            <!-- added input here for submitting after clicking -->
+            <div>
+              <input
+                type="submit"
+                class="btn btn-dark"
+                id="submit"
+                value="Submit"
+                disabled
+              />
+            </div>
+          </div>
+        </form>
         <button class="add">
           <i class="fas fa-plus"></i>
         </button>
@@ -32,6 +54,12 @@
     <!-- To add Remove button to remove all tasks -->
     <div class="button-cont" align="center">
       <a class="remove-btn" onclick="removeAll()"> Remove all Tasks</a>
+
+      <h3 class="mt-4">Tasks</h3>
+      <!-- added add form tag to add form input -->
+      <form id="addForm">
+        <ul class="list-group" id="items"></ul>
+      </form>
     </div>
   </body>
 </html>
