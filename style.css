@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  background-color: #202040;
+  background-color: #111130;
   box-sizing: border-box;
 }
 .take-input {
@@ -24,7 +24,7 @@ body {
 .Input-bar {
   width: 320px;
   border-radius: 5px;
-  border-color: rgb(223, 141, 9);
+  border-color: orange;
   padding: 10px;
   border-width: 4px;
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +39,41 @@ body {
 
 .add:hover {
   cursor: pointer;
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(248, 114, 5);
   color: #fff;
   transition: 0.5s;
+}
+
+.button-cont {
+  background: none;
+  outline: none;
+  border: none;
+  color: #e64242;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.remove-btn {
+  background-color: #e64242;
+  height: 55px;
+  width: 155px;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  display: inline;
+  transition: all 0.4s ease 0s;
+  font-size: 15px;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: #ff0123;
+  letter-spacing: 1px;
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
